@@ -1,0 +1,5 @@
+../Drivers/Ring_Buffer.c:3:6:Add_Element	16	static
+../Drivers/Ring_Buffer.c:18:9:Get_Element	24	static
+../Drivers/Ring_Buffer.c:34:9:Peek_Element	16	static
+../Drivers/Ring_Buffer.c:39:9:Buffer_Empty	16	static
+../Drivers/Ring_Buffer.c:52:9:Buffer_Full	24	static

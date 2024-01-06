@@ -15,7 +15,7 @@
  * the values the UART is reading from the data register.
  */
 
-uint8_t data;
+/*uint8_t data;
 
 int main()
 {
@@ -46,4 +46,4 @@ int main()
 		}
 
 	}
-}
+}*/

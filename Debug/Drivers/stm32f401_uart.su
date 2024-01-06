@@ -10,5 +10,5 @@ C:/Users/klaze/Documents/Chip Headers/CMSIS/Include/core_cm4.h:1688:22:__NVIC_En
 ../Drivers/stm32f401_uart.c:314:6:UART_Init	32	static
 ../Drivers/stm32f401_uart.c:364:6:WriteByte	16	static
 ../Drivers/stm32f401_uart.c:411:5:PrintData	16	static
-../Drivers/stm32f401_uart.c:428:9:ReadByte	16	static
-../Drivers/stm32f401_uart.c:452:6:UART_Interrupt_Init	16	static
+../Drivers/stm32f401_uart.c:431:9:ReadByte	16	static
+../Drivers/stm32f401_uart.c:455:6:UART_Interrupt_Init	16	static

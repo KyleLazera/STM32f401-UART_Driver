@@ -14,22 +14,31 @@
 
 
 //This is the message to be printed.
-char message[50] = "Hello World from UART!\n\r";
+/*char message[50] = "Hello World from UART!\n\r";
+char data[5] = {5, 4, 3, 2, 1};
 
 int main()
 {
 	UART_Config_t UART2;
+
+	RCC_APB1Cmd(USART2_Enable, DISABLE);
 
 	//Configuring UART2 to be in transfer mode and have a badrate of 115200.
 	UART_Config(&UART2, USART2, UART_MODE_TX, 115200);
 
 	UART_Init(&UART2);
 
+	//Printing data via polling
+	//PrintData(&UART2, message);
+
+	PrintData(&UART2, data);
+
+	RCC_APB1Cmd(USART2_Enable, DISABLE);
+
 	while(1)
 	{
-		//Printing data via polling
-		PrintData(&UART2, message);
+
 	}
-}
+}*/
 
 

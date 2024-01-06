@@ -5,16 +5,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Drivers/Ring_Buffer.c \
 ../Drivers/stm32f401_gpio.c \
 ../Drivers/stm32f401_rcc.c \
 ../Drivers/stm32f401_uart.c 
 
 OBJS += \
+./Drivers/Ring_Buffer.o \
 ./Drivers/stm32f401_gpio.o \
 ./Drivers/stm32f401_rcc.o \
 ./Drivers/stm32f401_uart.o 
 
 C_DEPS += \
+./Drivers/Ring_Buffer.d \
 ./Drivers/stm32f401_gpio.d \
 ./Drivers/stm32f401_rcc.d \
 ./Drivers/stm32f401_uart.d 
@@ -27,7 +30,7 @@ Drivers/%.o Drivers/%.su Drivers/%.cyclo: ../Drivers/%.c Drivers/subdir.mk
 clean: clean-Drivers
 
 clean-Drivers:
-	-$(RM) ./Drivers/stm32f401_gpio.cyclo ./Drivers/stm32f401_gpio.d ./Drivers/stm32f401_gpio.o ./Drivers/stm32f401_gpio.su ./Drivers/stm32f401_rcc.cyclo ./Drivers/stm32f401_rcc.d ./Drivers/stm32f401_rcc.o ./Drivers/stm32f401_rcc.su ./Drivers/stm32f401_uart.cyclo ./Drivers/stm32f401_uart.d ./Drivers/stm32f401_uart.o ./Drivers/stm32f401_uart.su
+	-$(RM) ./Drivers/Ring_Buffer.cyclo ./Drivers/Ring_Buffer.d ./Drivers/Ring_Buffer.o ./Drivers/Ring_Buffer.su ./Drivers/stm32f401_gpio.cyclo ./Drivers/stm32f401_gpio.d ./Drivers/stm32f401_gpio.o ./Drivers/stm32f401_gpio.su ./Drivers/stm32f401_rcc.cyclo ./Drivers/stm32f401_rcc.d ./Drivers/stm32f401_rcc.o ./Drivers/stm32f401_rcc.su ./Drivers/stm32f401_uart.cyclo ./Drivers/stm32f401_uart.d ./Drivers/stm32f401_uart.o ./Drivers/stm32f401_uart.su
 
 .PHONY: clean-Drivers
 

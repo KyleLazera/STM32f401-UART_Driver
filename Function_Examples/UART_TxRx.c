@@ -7,7 +7,7 @@
  * the input data from the user.
  */
 
-UART_Config_t UART2;
+/*UART_Config_t UART2;
 
 uint8_t temporary_variable;
 
@@ -41,6 +41,6 @@ void USART2_IRQHandler(void)
 		WriteByte(&UART2, temporary_variable);
 
 	}
-}
+}*/
 
 

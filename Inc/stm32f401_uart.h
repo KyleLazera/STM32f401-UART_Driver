@@ -31,6 +31,8 @@ typedef struct
 #define UART_CR1_PCE_Enable						(0x1UL << UART_CR1_PCE_Pos)
 #define UART_SR_TXE_Pos							(7U)
 #define UART_SR_TXE_Mask						(0x1UL << UART_SR_TXE_Pos)
+#define UART_SR_TC_Pos							(6U)
+#define UART_SR_TC_Mask							(0x1UL << UART_SR_TC_Pos)
 #define UART_SR_RXNE_Pos						(5U)
 #define UART_SR_RXNE_Mask						(0x1UL << UART_SR_RXNE_Pos)
 #define UART_SR_ORE_Pos							(3U)
@@ -48,6 +50,8 @@ typedef struct
 #define UART_TXEIE_Enable						(0x1UL << UART_CR1_TXEIE_Pos)
 #define UART_CR1_TCIE_Pos						(6U)
 #define UART_TCIE_Enable						(0x1UL << UART_CR1_TCIE_Pos)
+#define UART_IDLEIE_Pos							(4U)
+#define UART_IDLEIE_Enable						(0x1UL << UART_IDLEIE_Pos)
 
 /*
  * @UART_OverSampling

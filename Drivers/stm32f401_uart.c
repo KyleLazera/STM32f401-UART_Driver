@@ -414,6 +414,9 @@ int PrintData(UART_Config_t *UART_Config, char *ptr)
 	{
 		WriteByte(UART_Config, *ptr++);
 	}
+
+	while(!(UART_Config->UARTx->SR & UART_SR_TC_Mask)){}
+
 	return 1;
 }
 
