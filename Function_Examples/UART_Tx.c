@@ -14,7 +14,7 @@
 
 
 //This is the message to be printed.
-/*char message[50] = "Hello World from UART!\n\r";
+char message[50] = "Hello World from UART!\n\r";
 char data[5] = {5, 4, 3, 2, 1};
 
 int main()
@@ -39,6 +39,6 @@ int main()
 	{
 
 	}
-}*/
+}
 
 

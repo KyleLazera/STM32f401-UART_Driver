@@ -10,7 +10,7 @@
  * LED.
  */
 
-/*UART_Config_t UART2;
+UART_Config_t UART2;
 
 uint8_t temporary_variable;
 
@@ -53,5 +53,5 @@ void USART2_IRQHandler(void)
 		}
 
 	}
-}*/
+}
 
